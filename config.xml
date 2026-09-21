@@ -5,30 +5,138 @@ author:			ruckage
 -->
 
 <theme>
-    <formatVersion>3</formatVersion>
-	
-<!-- Choose your layout ()see ## LAYOUT GUIDE ##.png) -->
-	<include>./layouts/a.xml</include>
-	
-<!-- Choose how number of players is displayed (icon or text) -->	
-	<include>./players/icon.xml</include>	
-	
-<!-- Choose your rating symbol (heart or bead) -->	
-	<include>./rating/heart.xml</include>	
+    <formatVersion>7</formatVersion>
 
-<!-- Choose your background (For the available options see the jpg files named ## BACKGROUND GUIDE ##) -->	
-    <include>./background/neon_blue_spectrum.xml</include>	
+	<!-- Choose your layout ()see ## LAYOUT GUIDE ##.png) -->
+	<subset name="layout" displayName="LAYOUT">
+		<include name="a" displayName="a">./layouts/a.xml</include>
+		<include name="b" displayName="b">./layouts/b.xml</include>
+		<include name="c" displayName="c">./layouts/c.xml</include>
+		<include name="d" displayName="d">./layouts/d.xml</include>
+		<include name="e" displayName="e">./layouts/e.xml</include>
+		<include name="f" displayName="f">./layouts/f.xml</include>
+		<include name="g" displayName="g">./layouts/g.xml</include>
+		<include name="h" displayName="h">./layouts/h.xml</include>
+		<include name="i" displayName="i">./layouts/i.xml</include>
+		<include name="j" displayName="j">./layouts/j.xml</include>
+		<include name="k" displayName="k">./layouts/k.xml</include>
+		<include name="l" displayName="l">./layouts/l.xml</include>
+		<include name="m" displayName="m">./layouts/m.xml</include>
+		<include name="n" displayName="n">./layouts/n.xml</include>
+		<include name="o" displayName="o">./layouts/o.xml</include>
+		<include name="p" displayName="p">./layouts/p.xml</include>
+		<include name="q" displayName="q">./layouts/q.xml</include>
+		<include name="r" displayName="r">./layouts/r.xml</include>
+		<include name="s" displayName="s">./layouts/s.xml</include>
+		<include name="t" displayName="t">./layouts/t.xml</include>
+		<include name="u" displayName="u">./layouts/u.xml</include>
+		<include name="v" displayName="v">./layouts/v.xml</include>
+		<include name="w" displayName="w">./layouts/w.xml</include>
+		<include name="x" displayName="x">./layouts/x.xml</include>
+		<include name="no_meta_a" displayName="no_meta_a">./layouts/no_meta_a.xml</include>
+		<include name="no_meta_b" displayName="no_meta_b">./layouts/no_meta_b.xml</include>
+		<include name="no_meta_c" displayName="no_meta_c">./layouts/no_meta_c.xml</include>
+	</subset>
 	
-<!-- Choose your theme style (snes_europe or snes_usa or nes_rich_europe or nes_rich_usa or nes_simple_europe or nes_simple_usa) -->	
-	<include>./style/snes_europe.xml</include>	
+	<!-- Choose how number of players is displayed -->	
+	<subset name="player" displayName="PLAYER">
+		<include name="icon" displayName="icon">./players/icon.xml</include>
+		<include name="text" displayName="text">./players/text.xml</include>
+	</subset>
 	
-<!-- Choose your resolution -->	
-	<include>./layouts/1920x1080.xml</include> <!-- supported resolutions 640x480, 800x600, 1024x768, 1280x720, 1280x960, 1366x768, 1440x1080, 1920x1080, ntsc, pal -->
+	<!-- Choose your rating symbol -->	
+	<subset name="rating" displayName="RATING">
+		<include name="heart" displayName="heart">./rating/heart.xml</include>
+		<include name="bead" displayName="bead">./rating/bead.xml</include>
+	</subset>
+	
+	<!-- Choose your theme style -->	
+	<subset name="style" displayName="STYLE">
+		<include name="snes_europe" displayName="snes_europe">./style/snes_europe.xml</include>
+		<include name="snes_usa" displayName="snes_usa">./style/snes_usa.xml</include>
+		<include name="nes_rich_europe" displayName="nes_rich_europe">./style/nes_rich_europe.xml</include>
+		<include name="nes_rich_usa" displayName="nes_rich_usa">./style/nes_rich_usa.xml</include>
+		<include name="nes_simple_europe" displayName="nes_simple_europe">./style/nes_simple_europe.xml</include>
+		<include name="nes_simple_usa" displayName="nes_simple_usa">./style/nes_simple_usa.xml</include>
+	</subset>
+	
+	<!-- Choose your background (For the available options see the jpg files named ## BACKGROUND GUIDE ##) -->	
+	<subset name="background" displayName="BACKGROUND">
+		<include name="nes_mini" displayName="nes_mini">./background/nes_mini.xml</include>
+		<include name="blurred_shots" displayName="blurred_shots">./background/blurred_shots.xml</include>
+		<include name="blurred_shots_black_vignette" displayName="blurred_shots_black_vignette">./background/blurred_shots_black_vignette.xml</include>
+		<include name="blurred_shots_dark" displayName="blurred_shots_dark">./background/blurred_shots_dark.xml</include>
+		<include name="blurred_shots_light" displayName="blurred_shots_light">./background/blurred_shots_light.xml</include>
+		<include name="blurred_shots_white_vignette" displayName="blurred_shots_white_vignette">./background/blurred_shots_white_vignette.xml</include>
+		<include name="chalk" displayName="chalk">./background/chalk.xml</include>
+		<include name="chalk_color" displayName="chalk_color">./background/chalk_color.xml</include>
+		<include name="neon_aqua" displayName="neon_aqua">./background/neon_aqua.xml</include>
+		<include name="neon_aqua_blur" displayName="neon_aqua_blur">./background/neon_aqua_blur.xml</include>
+		<include name="neon_black_red" displayName="neon_black_red">./background/neon_black_red.xml</include>
+		<include name="neon_black_red_blur" displayName="neon_black_red_blur">./background/neon_black_red_blur.xml</include>
+		<include name="neon_black_spectrum" displayName="neon_black_spectrum">./background/neon_black_spectrum.xml</include>
+		<include name="neon_black_spectrum_blur" displayName="neon_black_spectrum_blur">./background/neon_black_spectrum_blur.xml</include>
+		<include name="neon_blue" displayName="neon_blue">./background/neon_blue.xml</include>
+		<include name="neon_blue_blur" displayName="neon_blue_blur">./background/neon_blue_blur.xml</include>
+		<include name="neon_blue_spectrum" displayName="neon_blue_spectrum">./background/neon_blue_spectrum.xml</include>
+		<include name="neon_blue_spectrum_blur" displayName="neon_blue_spectrum_blur">./background/neon_blue_spectrum_blur.xml</include>
+		<include name="neon_deep_purple" displayName="neon_deep_purple">./background/neon_deep_purple.xml</include>
+		<include name="neon_deep_purple_blur" displayName="neon_deep_purple_blur">./background/neon_deep_purple_blur.xml</include>
+		<include name="neon_green" displayName="neon_green">./background/neon_green.xml</include>
+		<include name="neon_green_blur" displayName="neon_green_blur">./background/neon_green_blur.xml</include>
+		<include name="neon_grey" displayName="neon_grey">./background/neon_grey.xml</include>
+		<include name="neon_grey_blur" displayName="neon_grey_blur">./background/neon_grey_blur.xml</include>
+		<include name="neon_hot_pink" displayName="neon_hot_pink">./background/neon_hot_pink.xml</include>
+		<include name="neon_hot_pink_blur" displayName="neon_hot_pink_blur">./background/neon_hot_pink_blur.xml</include>
+		<include name="neon_lime" displayName="neon_lime">./background/neon_lime.xml</include>
+		<include name="neon_lime_blur" displayName="neon_lime_blur">./background/neon_lime_blur.xml</include>
+		<include name="neon_magma" displayName="neon_magma">./background/neon_magma.xml</include>
+		<include name="neon_magma_blur" displayName="neon_magma_blur">./background/neon_magma_blur.xml</include>
+		<include name="neon_mustard" displayName="neon_mustard">./background/neon_mustard.xml</include>
+		<include name="neon_mustard_blur" displayName="neon_mustard_blur">./background/neon_mustard_blur.xml</include>
+		<include name="neon_peach" displayName="neon_peach">./background/neon_peach.xml</include>
+		<include name="neon_peach_blur" displayName="neon_peach_blur">./background/neon_peach_blur.xml</include>
+		<include name="neon_pink" displayName="neon_pink">./background/neon_pink.xml</include>
+		<include name="neon_pink_blue" displayName="neon_pink_blue">./background/neon_pink_blue.xml</include>
+		<include name="neon_pink_blue_blur" displayName="neon_pink_blue_blur">./background/neon_pink_blue_blur.xml</include>
+		<include name="neon_pink_blur" displayName="neon_pink_blur">./background/neon_pink_blur.xml</include>
+		<include name="neon_purple" displayName="neon_purple">./background/neon_purple.xml</include>
+		<include name="neon_purple_blur" displayName="neon_purple_blur">./background/neon_purple_blur.xml</include>
+		<include name="neon_purple_green" displayName="neon_purple_green">./background/neon_purple_green.xml</include>
+		<include name="neon_purple_green_blur" displayName="neon_purple_green_blur">./background/neon_purple_green_blur.xml</include>
+		<include name="neon_white_blue" displayName="neon_white_blue">./background/neon_white_blue.xml</include>
+		<include name="neon_white_blue_blur" displayName="neon_white_blue_blur">./background/neon_white_blue_blur.xml</include>
+		<include name="neon_white_spectrum" displayName="neon_white_spectrum">./background/neon_white_spectrum.xml</include>
+		<include name="neon_white_spectrum_blur" displayName="neon_white_spectrum_blur">./background/neon_white_spectrum_blur.xml</include>
+		<include name="neon_yellow_blue" displayName="neon_yellow_blue">./background/neon_yellow_blue.xml</include>
+		<include name="neon_yellow_blue_blur" displayName="neon_yellow_blue_blur">./background/neon_yellow_blue_blur.xml</include>
+	</subset>
+	
+	<!-- Choose your resolution -->	
+	<subset name="resolution" displayName="RESOLUTION">
+		<include name="640x480" displayName="640x480">./layouts/640x480.xml</include>
+		<include name="800x600" displayName="800x600">./layouts/800x600.xml</include>
+		<include name="1024x768" displayName="1024x768">./layouts/1024x768.xml</include>
+		<include name="1280x720" displayName="1280x720">./layouts/1280x720.xml</include>
+		<include name="1280x960" displayName="1280x960">./layouts/1280x960.xml</include>
+		<include name="1366x768" displayName="1366x768">./layouts/1366x768.xml</include>
+		<include name="1440x1080" displayName="1440x1080">./layouts/1440x1080.xml</include>
+		<include name="1920x1080" displayName="1920x1080">./layouts/1920x1080.xml</include>
+		<include name="ntsc" displayName="ntsc">./layouts/ntsc.xml</include>
+		<include name="pal" displayName="pal">./layouts/pal.xml</include>
+	</subset>
 
-<!-- Choose font size used in the gamelist (big or small) -->	
-	<include>./list-font/big.xml</include>	
+	<!-- Choose font size used in the gamelist -->	
+	<subset name="font size" displayName="FONT SIZE">
+		<include name="big" displayName="big">./list-font/big.xml</include>
+		<include name="small" displayName="small">./list-font/small.xml</include>
+	</subset>
 
-<!-- Choose text alignment for the game list (left-align, center-align, right-align)-->	
-	<include>./list-font/left-align.xml</include>			
+	<!-- Choose text alignment for the game list -->	
+	<subset name="font alignment" displayName="FONT ALIGNMENT">
+		<include name="left-align" displayName="left-align">./list-font/left-align.xml</include>
+		<include name="center-align" displayName="center-align">./list-font/center-align.xml</include>
+		<include name="right-align" displayName="right-align">./list-font/right-align.xml</include>
+	</subset>
 
 </theme>
